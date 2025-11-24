@@ -1,11 +1,10 @@
-
 # Weather Chatbot demo
 Demo URL: https://weather-bot-demo.vercel.app/
 <p align="center">
   <img width="373" height="510" alt="image" src="https://github.com/user-attachments/assets/07df9d6e-f699-41c5-92dc-76bb41eac7c3" />
   <img width="373" height="560" alt="Image" src="https://github.com/user-attachments/assets/aadeace6-0f7c-4351-a075-30ac683c919d" />
 </p>
-This project is built using a lightweight web stack optimized for fast performance, real-time interaction, and smooth deployment:
+This project is built using a lightweight web stack optimized for fast performance, real-time interaction, and smooth deployment. It uses ReactJS with Vite as the foundational template and is deployed using Vercel.
 
 ## Frontend
 
@@ -35,17 +34,16 @@ Handles API key security and response shaping.
 
 ## Deployment
 
-Vercel — Fully managed hosting + CI/CD. Every GitHub push automatically triggers a new build and deployment.
-
-Automatic environment variable management for API keys.
-## Tech Stack
-
-**Client:** React, Redux, TailwindCSS
-
-**Server:** Node, Express
+Vercel handles the hosting and the deployment. Every GitHub push automatically triggers a new build and deployment.
+Environment variable for the API keys were defined within the vercel deployment settings.
 
 
-## Screenshots
+## Figma Mockups
+The initial UI designs were explored in Figma. The initial idea was very rough and contained a dedicated chat section which further along the iterations got divided into two separate sections; one for the weather card and other for the suggestions. This was a very quick design, so it's not refined at all. But you can see the 3 design iterations that I went through. 
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+<img width="1678" height="920" alt="image" src="https://github.com/user-attachments/assets/a7cb93a6-a481-415c-825e-516b0717f11d" />
+
+
+
+
 

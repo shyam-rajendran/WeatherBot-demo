@@ -22,7 +22,7 @@ function App() {
     stop,
   } = useSpeechToText();
 
-  // Voice → just fill the text box; backend handles EN/JA and city extraction
+  
   useEffect(() => {
     if (transcript) {
       setCity(transcript);
@@ -59,7 +59,7 @@ function App() {
       setLoadingWeather(false);
       setLoadingAI(true);
 
-      // AI suggestions (Gemini 2.5)
+      // (Gemini 2.5)
       const suggestRes = await fetch('/api/suggest', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -103,8 +103,7 @@ function App() {
     return;
   }
 
-  // Decide language from whatever is in the input box right now.
-  // If it contains A–Z letters, treat it as English, otherwise Japanese.
+  
   const hasLatin = /[A-Za-z]/.test(city);
 
   const langCode = hasLatin ? 'en-US' : 'ja-JP';
